@@ -1,0 +1,21 @@
+.logo {
+  &,
+  &:link,
+  &:active,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  &__image {
+    height: 100%;
+  }
+}
+
+// ========================================> Modular height for logo
+.logo.logo-hx6 {
+  height: 6rem;
+}
+.logo.logo-hx8 {
+  height: 8rem;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "dental-care",
+  "version": "1.0.0",
+  "description": "Dental Care 🐸.",
+  "main": "app.js",
+  "scripts": {
+    "compile:scss": "sass --watch ./scss/main.scss ./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/the_souroov/dental-care.git"
+  },
+  "keywords": [
+    "Ddental",
+    "Care"
+  ],
+  "author": "Sourov Biswas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/the_souroov/dental-care/issues"
+  },
+  "homepage": "https://github.com/the_souroov/dental-care#readme",
+  "devDependencies": {
+    "sass": "^1.56.1"
+  }
+}

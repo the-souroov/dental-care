@@ -1,0 +1,69 @@
+.profile-card {
+  border-radius: 1rem;
+  box-shadow: 0.6rem 0.6rem 1rem rgba(0, 0, 0, 0.4);
+  background-color: var(--color-bg-primary);
+  display: inline-block;
+  overflow: hidden;
+  padding-bottom: 1rem;
+  width: 40rem;
+
+  &__header {
+    background-image: linear-gradient(
+      to right bottom,
+      var(--color-primary),
+      var(--color-gray),
+      var(--color-secondary)
+    );
+    height: 20rem;
+  }
+
+  &__profile-picture {
+    border: 0.5rem solid var(--color-bg-primary);
+    border-radius: 50%;
+    height: 15rem;
+    margin: -7.5rem auto 1rem auto;
+    overflow: hidden;
+    width: 15rem;
+    transition: all 0.5s;
+
+    & > img {
+      height: 100%;
+      transform: translateX(-3rem);
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__container {
+    border-radius: inherit;
+    background-color: var(--color-gray);
+    margin: 1rem;
+    padding: 2rem;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    align-items: center;
+    color: var(--color-text-primary);
+    display: flex;
+    font-size: 1.6rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+
+    &--main {
+      font-weight: 600;
+      margin-right: 0.5rem;
+    }
+
+    &--sub {
+      font-weight: 500;
+    }
+  }
+}

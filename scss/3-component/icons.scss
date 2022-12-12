@@ -1,0 +1,105 @@
+.icon {
+  display: inline-block;
+
+  &--color-primary {
+    fill: var(--color-primary);
+  }
+  &--color-black {
+    fill: var(--color-text-primary);
+  }
+  &--color-white {
+    fill: var(--color-text-secondary);
+  }
+}
+
+.icon-set-social {
+  display: inline-block;
+
+  &__link {
+    &,
+    &:link,
+    &:active,
+    &:visited {
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    &:hover > .icon {
+      fill: var(--color-secondary);
+    }
+  }
+
+  & [class^="icon"] {
+    transition: all 0.3s;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+}
+
+.icon-info {
+  align-items: center;
+  display: flex;
+
+  &::before {
+    background-image: linear-gradient(
+      to right,
+      var(--color-primary),
+      var(--color-secondary)
+    );
+    content: "";
+    display: inline-block;
+    height: 6rem;
+    margin-right: 2rem;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    width: 6rem;
+  }
+
+  &--call::before {
+    -webkit-mask-image: url("./../images/icon-phone-call.svg");
+    mask-image: url("./../images/icon-phone-call.svg");
+  }
+
+  &--mail::before {
+    -webkit-mask-image: url("./../images/icon-mail.svg");
+    mask-image: url("./../images/icon-mail.svg");
+  }
+}
+
+.icon-hamburger {
+  border-radius: 50%;
+  background-color: var(--color-bg-primary);
+  box-shadow: 0.6rem 0.6rem 1rem rgba(51, 51, 51, 0.4);
+  display: none;
+  flex-direction: column;
+  height: 7rem;
+  justify-content: space-between;
+  padding: 2rem;
+  position: fixed;
+  right: 3rem;
+  top: 3rem;
+  transition: all 0.2s;
+  width: 7rem;
+  z-index: 200;
+
+  &__bar {
+    background-color: var(--color-bg-secondary);
+    display: block;
+    height: 2px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  &:active {
+    box-shadow: none;
+    transform: scale(1);
+  }
+
+  @media only screen and (max-width: 850px) {
+    display: flex;
+  }
+}

@@ -1,0 +1,161 @@
+// ========================================> Importing google fonts
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+// ========================================> Heading primary code
+.heading-primary {
+  text-align: center;
+  text-transform: uppercase;
+
+  &__main {
+    display: block;
+    font-size: 16rem;
+    letter-spacing: 5rem;
+
+    @media only screen and (max-width: 625px) {
+      font-size: 10rem;
+    }
+
+    @media only screen and (max-width: 450px) {
+      font-size: 8rem;
+      letter-spacing: 2rem;
+    }
+  }
+  &__sub {
+    font-size: 3rem;
+    letter-spacing: 1rem;
+
+    @media only screen and (max-width: 625px) {
+      font-size: 2rem;
+    }
+
+    @media only screen and (max-width: 450px) {
+      letter-spacing: 0.5rem;
+    }
+  }
+
+  &--color-white {
+    color: var(--color-text-secondary);
+  }
+
+  &--animation {
+    animation: toTop 1.5s;
+  }
+}
+
+// ========================================> Heading secondary code
+.heading-secondary {
+  font-size: 4rem;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &__sub {
+    color: var(--color-text-primary);
+    display: block;
+  }
+
+  &__main {
+    background-image: linear-gradient(
+      to right,
+      var(--color-primary),
+      var(--color-secondary)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+// ========================================> Heading tertiary code
+
+.heading-tertiary {
+  font-size: 2rem;
+  font-weight: 600;
+
+  &--color-black {
+    color: var(--color-text-primary);
+  }
+  &--color-white {
+    color: var(--color-text-secondary);
+  }
+  &--color-secondary {
+    color: var(--color-secondary);
+  }
+
+  &--text-uppercase {
+    text-transform: uppercase;
+  }
+}
+
+// ========================================> Heading fourth code
+.heading-fourth {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  &--sub {
+    color: var(--color-text-primary);
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  &--main {
+    color: var(--color-secondary);
+  }
+}
+
+// ========================================> Paragraph secondary code
+.paragraph {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+
+  &--color-white {
+    color: var(--color-text-secondary);
+  }
+  &--color-black {
+    color: var(--color-text-primary);
+  }
+}
+
+// ========================================> Copyright text code
+.copyright-text {
+  align-items: center;
+  color: var(--color-text-secondary);
+  display: flex;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  &--main {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    margin: 1rem;
+  }
+
+  & > .icon {
+    transition: all 0.5s;
+    &:hover {
+      cursor: pointer;
+      transform: rotate(-180deg);
+    }
+  }
+
+  &--link {
+    &,
+    &:link,
+    &:active,
+    &:visited {
+      color: var(--color-text-secondary);
+      font-size: 2rem;
+      letter-spacing: 0.5rem;
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}

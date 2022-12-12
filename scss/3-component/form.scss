@@ -1,0 +1,63 @@
+.form {
+  background-color: var(--color-bg-primary);
+  box-shadow: 0.6rem 0.6rem 1rem rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+
+  & > .logo,
+  .button-secondary {
+    align-self: center;
+  }
+
+  & > [class^="form__group"]:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &__input {
+    background-color: var(--color-gray);
+    border: none;
+    border-bottom: 2px solid transparent;
+    border-radius: 0.5rem 0.5rem 0 0;
+    color: var(--color-text-primary);
+    display: block;
+    font-family: inherit;
+    font-weight: 500;
+    height: 5rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    transition: all 0.2s;
+    width: 100%;
+
+    &::-webkit-input-placeholder {
+      color: var(--color-text-primary);
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+    &:focus:invalid {
+      border-bottom: 2px solid var(--color-secondary);
+    }
+    &:focus:valid {
+      border-bottom: 2px solid var(--color-primary);
+    }
+  }
+  &__label {
+    display: inline-block;
+    color: var(--color-text-primary);
+    font-weight: 500;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    margin-left: 1rem;
+    transition: all 0.2s;
+  }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    transform: translateY(-4.5rem);
+    visibility: hidden;
+  }
+}

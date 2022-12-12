@@ -1,0 +1,93 @@
+.button-primary {
+  &,
+  &:link,
+  &:active,
+  &:visited {
+    border-radius: 0.5rem;
+    background-image: linear-gradient(
+      to right,
+      var(--color-primary),
+      var(--color-secondary)
+    );
+    color: var(--color-text-secondary);
+    display: inline-block;
+    font-size: 2.6rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    box-shadow: 0.6rem 0.6rem 1rem rgba(0, 0, 0, 0.4);
+    transform: scale(1.1);
+  }
+
+  &:active {
+    box-shadow: none;
+    transform: scale(1);
+  }
+}
+
+.button-secondary {
+  &,
+  &:link,
+  &:active,
+  &:visited {
+    border: none;
+    box-shadow: 1rem 1rem var(--color-bg-secondary);
+    background-color: var(--color-secondary);
+    color: var(--color-text-secondary);
+    display: inline-block;
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--color-bg-secondary);
+    box-shadow: 1rem 1rem var(--color-secondary);
+    transform: scale(1.1);
+  }
+  &:active {
+    background-color: var(--color-secondary);
+    box-shadow: none;
+    transform: scale(1);
+  }
+}
+
+.button-tertiary {
+  &,
+  &:link,
+  &:active,
+  &:visited {
+    border-bottom: 2px solid var(--color-primary);
+    color: var(--color-text-primary);
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    background-color: var(--color-primary);
+    color: #f5f5f5;
+    cursor: pointer;
+  }
+
+  &:active {
+    border-bottom: 2px solid var(--color-secondary);
+    background-color: var(--color-secondary);
+  }
+}

@@ -1,0 +1,29 @@
+.section-booking {
+  &__container {
+    display: flex;
+
+    & > * {
+      flex: 1;
+    }
+
+    & > .note {
+      border-radius: 1rem 0 0 1rem;
+    }
+    & > .form {
+      border-radius: 0 1rem 1rem 0;
+    }
+
+    @media only screen and (max-width: 750px) {
+      align-items: center;
+      flex-direction: column;
+
+      & > .note {
+        border-radius: 1rem;
+      }
+      & > .form {
+        border-radius: 0 0 1rem 1rem;
+        width: 90%;
+      }
+    }
+  }
+}

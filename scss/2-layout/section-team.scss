@@ -1,0 +1,47 @@
+.section-team {
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-bg-primary),
+    var(--color-primary),
+    var(--color-bg-primary)
+  );
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 1100px) {
+      justify-content: center;
+
+      & > .profile-card {
+        &:nth-child(3) {
+          display: none;
+          visibility: hidden;
+        }
+
+        &:nth-child(1) {
+          margin-right: 5rem;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 625px) {
+      align-items: center;
+      flex-direction: column;
+
+      & > .profile-card {
+        &:not(:last-child) {
+          margin-bottom: 2rem;
+        }
+
+        &:nth-child(3) {
+          display: inline-block;
+          visibility: visible;
+        }
+        &:nth-child(1) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

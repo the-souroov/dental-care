@@ -1,0 +1,25 @@
+// ========================================> Css reset
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // ====================> "(10/16)=62.5%", So, Now the root font size is 10px.
+
+  @media only screen and (max-width: 1550px) {
+    font-size: 56.25%; // ====================> "(9/16)=56.25%", So, Now the root font size is 9px.
+  }
+  @media only screen and (max-width: 1400px) {
+    font-size: 50%; // ====================> "(8/16)=50%", So, Now the root font size is 8px.
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--color-bg-primary);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  position: relative;
+}

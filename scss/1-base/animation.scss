@@ -1,0 +1,19 @@
+@keyframes toTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-20rem);
+    visibility: 0;
+  }
+
+  70% {
+    opacity: 1;
+    transform: translateY(2rem);
+    visibility: 1;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: 1;
+  }
+}

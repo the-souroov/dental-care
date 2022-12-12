@@ -1,0 +1,8 @@
+.signature {
+  display: inline-block;
+  height: 10rem;
+
+  & > img {
+    height: 100%;
+  }
+}

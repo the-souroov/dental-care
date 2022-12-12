@@ -1,0 +1,29 @@
+.service-card {
+  border-radius: 1rem;
+  background-color: var(--color-bg-primary);
+  box-shadow: 0.6rem 0.6rem 1rem rgba(0, 0, 0, 0.4);
+  max-width: 25rem;
+  overflow: hidden;
+  padding: 1rem;
+
+  &__header {
+    border-radius: inherit;
+    background-image: linear-gradient(
+      to bottom,
+      var(--color-primary),
+      var(--color-secondary)
+    );
+    height: 15rem;
+  }
+
+  &__icon {
+    border-radius: inherit;
+    background-color: var(--color-bg-primary);
+    box-shadow: 0.6rem 0.6rem 1rem rgba(0, 0, 0, 0.4);
+    display: block;
+    height: 8rem;
+    margin: -4rem auto 2rem auto;
+    padding: 1rem;
+    width: 8rem;
+  }
+}

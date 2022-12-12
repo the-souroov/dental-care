@@ -1,0 +1,81 @@
+// ========================================> Section padding utility classes
+// ====================> Padding horizontally
+.s-p-h-small {
+  padding: 0 10rem;
+
+  @media only screen and (max-width: 1200px) {
+    padding: 0 5rem;
+  }
+
+  @media only screen and (max-width: 625px) {
+    padding: 0 2rem;
+  }
+}
+.s-p-h-big {
+  padding: 0 40rem;
+
+  @media only screen and (max-width: 1250px) {
+    padding: 0 30rem;
+  }
+
+  @media only screen and (max-width: 1100px) {
+    padding: 0 20rem;
+  }
+
+  @media only screen and (max-width: 900px) {
+    padding: 0 10rem;
+  }
+
+  @media only screen and (max-width: 450px) {
+    padding: 0 2rem;
+  }
+}
+
+// ========================================> Margin utility classes
+// ====================> Margin bottom
+.m-b-1 {
+  margin-bottom: 1rem;
+}
+.m-b-2 {
+  margin-bottom: 2rem;
+}
+.m-b-5 {
+  margin-bottom: 5rem;
+}
+.m-b-10 {
+  margin-bottom: 10rem;
+}
+// ====================> Margin right
+.m-r-1 {
+  margin-right: 1rem;
+}
+.m-r-2 {
+  margin-right: 2rem;
+}
+// ====================> Margin left
+.m-l-1 {
+  margin-left: 1rem;
+}
+
+// ========================================> Text alignment utility classes
+// ====================> Text align center
+.t-a-c {
+  text-align: center;
+}
+
+// ========================================> Dimension utility classes
+// ====================> Dimension 2x2
+.d-2x2 {
+  height: 2rem;
+  width: 2rem;
+}
+// ====================> Dimension 3x3
+.d-3x3 {
+  height: 3rem;
+  width: 3rem;
+}
+// ====================> Dimension 10x10
+.d-10x10 {
+  height: 10rem;
+  width: 10rem;
+}

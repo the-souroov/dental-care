@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- --------------------Map box CDN-------------------- -->
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <!-- --------------------Map box CDN-------------------- -->
+
+    <link rel="stylesheet" href="./public/css/style.css" />
+
+    <title>Dental Care &shortmid; SMILE</title>
+  </head>
+
+  <body>
+    <div class="icon-hamburger">
+      <span class="icon-hamburger__bar">&nbsp;</span>
+      <span class="icon-hamburger__bar">&nbsp;</span>
+      <span class="icon-hamburger__bar">&nbsp;</span>
+    </div>
+    <!-- --------------------Navigation bar code-------------------- -->
+    <nav class="navigation-bar s-p-h-small">
+      <div class="navigation-bar__top">
+        <a href="#" class="logo logo-hx6">
+          <img
+            src="./public/images/logo-black.svg"
+            alt="Brand logo"
+            class="logo__image"
+          />
+        </a>
+
+        <div class="icon-info icon-info--call">
+          <div class="icon-info__container">
+            <h3
+              class="heading-tertiary heading-tertiary--color-secondary heading-tertiary--text-uppercase"
+            >
+              emergency
+            </h3>
+
+            <p class="paragraph paragraph--color-black">+61 9875674328</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="navigation-bar__bottom">
+        <ul class="navigation-bar__list">
+          <li class="navigation-bar__item">
+            <a href="#section-booking" class="navigation-bar__link">
+              appointment
+            </a>
+          </li>
+
+          <li class="navigation-bar__item">
+            <a href="#section-service" class="navigation-bar__link">
+              services
+            </a>
+          </li>
+
+          <li class="navigation-bar__item">
+            <a href="#section-team" class="navigation-bar__link"> our team </a>
+          </li>
+
+          <li class="navigation-bar__item">
+            <a href="#section-contact" class="navigation-bar__link">
+              contact us
+            </a>
+          </li>
+
+          <li class="navigation-bar__item">
+            <a href="#" target="_blank" class="navigation-bar__link">
+              about us &nearrow;
+            </a>
+          </li>
+        </ul>
+
+        <div class="icon-set-social">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            class="icon-set-social__link"
+          >
+            <svg class="icon icon--color-black d-2x2">
+              <use href="./public/images/sprite.svg#icon-facebook" />
+            </svg>
+          </a>
+
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            class="icon-set-social__link"
+          >
+            <svg class="icon icon--color-black d-2x2">
+              <use href="./public/images/sprite.svg#icon-instagram" />
+            </svg>
+          </a>
+
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            class="icon-set-social__link"
+          >
+            <svg class="icon icon--color-black d-2x2">
+              <use href="./public/images/sprite.svg#icon-twitter" />
+            </svg>
+          </a>
+
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            class="icon-set-social__link"
+          >
+            <svg class="icon icon--color-black d-2x2">
+              <use href="./public/images/sprite.svg#icon-linkedin" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- --------------------Navigation bar code-------------------- -->
+
+    <!-- --------------------Section hero code-------------------- -->
+    <header class="section-hero m-b-10">
+      <div class="section-hero__container">
+        <h1
+          class="heading-primary heading-primary--color-white heading-primary--animation"
+        >
+          <span class="heading-primary__main">care</span>
+          <span class="heading-primary__sub">for your smile</span>
+        </h1>
+
+        <a href="#section-booking" class="button-primary">appointment</a>
+      </div>
+    </header>
+    <!-- --------------------Section hero code-------------------- -->
+
+    <main>
+      <!-- --------------------Section booking code-------------------- -->
+      <section id="section-booking" class="section-booking s-p-h-big m-b-10">
+        <h2 class="heading-secondary m-b-5">
+          <span class="heading-secondary__sub">need</span>
+          <span class="heading-secondary__main">appointment</span>
+        </h2>
+
+        <div class="section-booking__container">
+          <div class="note note--bg-color-blue t-a-c">
+            <p class="paragraph paragraph--color-white m-b-2">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+              necessitatibus quidem at repudiandae perspiciatis fugiat
+              cupiditate neque natus blanditiis architecto quos alias corrupti
+              consequuntur sint, voluptas voluptate doloremque amet iste?Lorem
+              ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+              necessitatibus quidem at repudiandae perspiciatis fugiat
+              cupiditate neque natus blanditiis architecto quos alias corrupti
+              consequuntur sint, voluptas voluptate doloremque amet iste?
+            </p>
+
+            <div class="signature">
+              <img src="./public/images/signature.png" alt="Author signature" />
+            </div>
+          </div>
+
+          <form class="form">
+            <a href="#" class="logo logo-hx6 m-b-2">
+              <img
+                src="./public/images/logo-black.svg"
+                alt="Brand logo"
+                class="logo__image"
+              />
+            </a>
+
+            <div class="form__group-input">
+              <input
+                type="text"
+                placeholder="Full Name"
+                class="form__input"
+                id="form__input-full-name"
+                required
+              />
+              <label for="form__input-full-name" class="form__label">
+                Full Name
+              </label>
+            </div>
+
+            <div class="form__group-input">
+              <input
+                type="email"
+                placeholder="Email"
+                class="form__input"
+                id="form__input-full-email"
+                required
+              />
+              <label for="form__input-full-email" class="form__label">
+                Email
+              </label>
+            </div>
+
+            <div class="form__group-input">
+              <input
+                type="number"
+                placeholder="Mobile NO."
+                class="form__input"
+                id="form__input-full-number"
+                required
+              />
+              <label for="form__input-full-number" class="form__label">
+                Mobile NO.
+              </label>
+            </div>
+
+            <input
+              type="submit"
+              value="Book your appointment"
+              class="button-secondary"
+            />
+          </form>
+        </div>
+      </section>
+      <!-- --------------------Section booking code-------------------- -->
+
+      <!-- --------------------Section service code-------------------- -->
+      <section id="section-service" class="section-service s-p-h-small m-b-10">
+        <h1 class="heading-secondary m-b-5">
+          <span class="heading-secondary__sub">committed to</span>
+          <span class="heading-secondary__main">excellence</span>
+        </h1>
+
+        <div class="section-service__container">
+          <div class="service-card">
+            <div class="service-card__header">&nbsp;</div>
+
+            <svg class="service-card__icon">
+              <use href="./public/images/sprite.svg#icon-activity" />
+            </svg>
+
+            <h3 class="heading-tertiary heading-tertiary--color-black m-b-1">
+              Lorem ipsum
+            </h3>
+
+            <p class="paragraph paragraph--color-black m-b-1">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Laboriosam, provident. Doloremque ex
+            </p>
+
+            <a class="button-tertiary">learn more &gt;</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__header">&nbsp;</div>
+
+            <svg class="service-card__icon">
+              <use href="./public/images/sprite.svg#icon-edit-2" />
+            </svg>
+
+            <h3 class="heading-tertiary heading-tertiary--color-black m-b-1">
+              Lorem ipsum
+            </h3>
+
+            <p class="paragraph paragraph--color-black m-b-1">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Laboriosam, provident. Doloremque ex
+            </p>
+
+            <a class="button-tertiary">learn more &gt;</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__header">&nbsp;</div>
+
+            <svg class="service-card__icon">
+              <use href="./public/images/sprite.svg#icon-alert-triangle" />
+            </svg>
+
+            <h3 class="heading-tertiary heading-tertiary--color-black m-b-1">
+              Lorem ipsum
+            </h3>
+
+            <p class="paragraph paragraph--color-black m-b-1">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Laboriosam, provident. Doloremque ex
+            </p>
+
+            <a class="button-tertiary">learn more &gt;</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__header">&nbsp;</div>
+
+            <svg class="service-card__icon">
+              <use href="./public/images/sprite.svg#icon-scissors" />
+            </svg>
+
+            <h3 class="heading-tertiary heading-tertiary--color-black m-b-1">
+              Lorem ipsum
+            </h3>
+
+            <p class="paragraph paragraph--color-black m-b-1">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Laboriosam, provident. Doloremque ex
+            </p>
+
+            <a class="button-tertiary">learn more &gt;</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__header">&nbsp;</div>
+
+            <svg class="service-card__icon">
+              <use href="./public/images/sprite.svg#icon-shield" />
+            </svg>
+
+            <h3 class="heading-tertiary heading-tertiary--color-black m-b-1">
+              Lorem ipsum
+            </h3>
+
+            <p class="paragraph paragraph--color-black m-b-1">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Laboriosam, provident. Doloremque ex
+            </p>
+
+            <a class="button-tertiary">learn more &gt;</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__header">&nbsp;</div>
+
+            <svg class="service-card__icon">
+              <use href="./public/images/sprite.svg#icon-git-commit" />
+            </svg>
+
+            <h3 class="heading-tertiary heading-tertiary--color-black m-b-1">
+              Lorem ipsum
+            </h3>
+
+            <p class="paragraph paragraph--color-black m-b-1">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Laboriosam, provident. Doloremque ex
+            </p>
+
+            <a class="button-tertiary">learn more &gt;</a>
+          </div>
+        </div>
+      </section>
+      <!-- --------------------Section service code-------------------- -->
+
+      <!-- --------------------Section team code-------------------- -->
+      <section id="section-team" class="section-team s-p-h-small m-b-10">
+        <h2 class="heading-secondary m-b-5">
+          <span class="heading-secondary__sub">our expert</span>
+          <span class="heading-secondary__main">team</span>
+        </h2>
+
+        <div class="section-team__container">
+          <div class="profile-card">
+            <div class="profile-card__header">&nbsp;</div>
+
+            <div class="profile-card__profile-picture">
+              <img src="./public/images/team-1.jpg" alt="Team member photo" />
+            </div>
+
+            <h3 class="heading-tertiary heading-tertiary--color-black t-a-c">
+              DR. Llinda Mmartin
+            </h3>
+
+            <div class="profile-card__container">
+              <ul class="profile-card__list">
+                <li class="profile-card__item">
+                  <svg class="icon icon--color-black d-3x3 m-r-1">
+                    <use href="./public/images/sprite.svg#icon-scissors" />
+                  </svg>
+
+                  <span class="profile-card__item--main">Lorem</span>
+
+                  <span class="profile-card__item--sub">
+                    ipsum dolor sit ame
+                  </span>
+                </li>
+
+                <li class="profile-card__item">
+                  <svg class="icon icon--color-black d-3x3 m-r-1">
+                    <use href="./public/images/sprite.svg#icon-git-commit" />
+                  </svg>
+
+                  <span class="profile-card__item--main">Consectetur</span>
+
+                  <span class="profile-card__item--sub"> nunc blandit </span>
+                </li>
+
+                <li class="profile-card__item">
+                  <svg class="icon icon--color-black d-3x3 m-r-1">
+                    <use href="./public/images/sprite.svg#icon-edit-2" />
+                  </svg>
+
+                  <span class="profile-card__item--main">Cursus</span>
+
+                  <span class="profile-card__item--sub">
+                    sem porttitor vitae
+                  </span>
+                </li>
+
+                <li class="profile-card__item">
+                  <svg class="icon icon--color-black d-3x3 m-r-1">
+                    <use href="./public/images/sprite.svg#icon-activity" />
+                  </svg>
+
+                  <span class="profile-card__item--main">Enim</span>
+
+                  <span class="profile-card__item--sub">
+                    mattis eget purus ut
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="icon-set-social m-l-1">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                class="icon-set-social__link"
+              >
+                <svg class="icon icon--color-black d-2x2">
+                  <use href="./public/images/sprite.svg#icon-facebook" />
+                </svg>
+              </a>
+
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                class="icon-set-social__link"
+              >
+                <svg class="icon icon--color-black d-2x2">
+                  <use href="./public/images/sprite.svg#icon-instagram" />
+                </svg>
+              </a>
+
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                class="icon-set-social__link"
+              >
+                <svg class="icon icon--color-black d-2x2">
+                  <use href="./public/images/sprite.svg#icon-twitter" />
+                </svg>
+              </a>
+
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                class="icon-set-social__link"
+              >
+                <svg class="icon icon--color-black d-2x2">
+                  <use href="./public/images/sprite.svg#icon-linkedin" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="profile-card">
+            <div class="profile-card__header">&nbsp;</div>
+
+            <div class="profile-card__profile-picture">
+              <img src="./public/images/team-2.jpg" alt="Team member photo" />
+            </div>
+
+            <h3 class="heading-tertiary heading-tertiary--color-black t-a-c">
+              DR. Hhon Hhartin
+            </h3>
+
+            <div class="profile-card__container">
+              <ul class="profile-card__list">
+                <li class="profile-card__item">
+                  <svg class="icon icon--color-black d-3x3 m-r-1">
+                    <use href="./public/images/sprite.svg#icon-scissors" />
+                  </svg>
+
+                  <span class="profile-card__item--main">Lorem</span>
+
+                  <span class="profile-card__item--sub">
+                    ipsum dolor sit ame
+                  </span>
+                </li>
+
+                <li class="profile-card__item">
+                  <svg class="icon icon--color-black d-3x3 m-r-1">
+                    <use href="./public/images/sprite.svg#icon-git-commit" />
+                  </svg>
+
+                  <span class="profile-card__item--main">Consectetur</span>
+
+                  <span class="profile-card__item--sub"> sit amet est </span>
+                </li>
+
+                <li class="profile-card__item">
+                  <svg class="icon icon--color-black d-3x3 m-r-1">
+                    <use href="./public/images/sprite.svg#icon-edit-2" />
+                  </svg>
+
+                  <span class="profile-card__item--main">Cursus</span>
+
+                  <span class="profile-card__item--sub"> faucibus elit </span>
+                </li>
+
+                <li class="profile-card__item">
+                  <svg class="icon icon--color-black d-3x3 m-r-1">
+                    <use href="./public/images/sprite.svg#icon-activity" />
+                  </svg>
+
+                  <span class="profile-card__item--main">Enim</span>
+
+                  <span class="profile-card__item--sub">
+                    Morbi pellentesque
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="icon-set-social m-l-1">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                class="icon-set-social__link"
+              >
+                <svg class="icon icon--color-black d-2x2">
+                  <use href="./public/images/sprite.svg#icon-instagram" />
+                </svg>
+              </a>
+
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                class="icon-set-social__link"
+              >
+                <svg class="icon icon--color-black d-2x2">
+                  <use href="./public/images/sprite.svg#icon-twitter" />
+                </svg>
+              </a>
+
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                class="icon-set-social__link"
+              >
+                <svg class="icon icon--color-black d-2x2">
+                  <use href="./public/images/sprite.svg#icon-linkedin" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="profile-card">
+            <div class="profile-card__header">&nbsp;</div>
+
+            <div class="profile-card__profile-picture">
+              <img src="./public/images/team-3.jpg" alt="Team member photo" />
+            </div>
+
+            <h3 class="heading-tertiary heading-tertiary--color-black t-a-c">
+              DR. Ttolmon Bbhai
+            </h3>
+
+            <div class="profile-card__container">
+              <ul class="profile-card__list">
+                <li class="profile-card__item">
+                  <svg class="icon icon--color-black d-3x3 m-r-1">
+                    <use href="./public/images/sprite.svg#icon-scissors" />
+                  </svg>
+
+                  <span class="profile-card__item--main">Lorem</span>
+
+                  <span class="profile-card__item--sub">
+                    ipsum dolor sit ame
+                  </span>
+                </li>
+
+                <li class="profile-card__item">
+                  <svg class="icon icon--color-black d-3x3 m-r-1">
+                    <use href="./public/images/sprite.svg#icon-git-commit" />
+                  </svg>
+
+                  <span class="profile-card__item--main">Consectetur</span>
+
+                  <span class="profile-card__item--sub"> nunc venenatis </span>
+                </li>
+
+                <li class="profile-card__item">
+                  <svg class="icon icon--color-black d-3x3 m-r-1">
+                    <use href="./public/images/sprite.svg#icon-edit-2" />
+                  </svg>
+
+                  <span class="profile-card__item--main">Cursus</span>
+
+                  <span class="profile-card__item--sub"> sem quisque non </span>
+                </li>
+
+                <li class="profile-card__item">
+                  <svg class="icon icon--color-black d-3x3 m-r-1">
+                    <use href="./public/images/sprite.svg#icon-activity" />
+                  </svg>
+
+                  <span class="profile-card__item--main">Enim</span>
+
+                  <span class="profile-card__item--sub"> sed tortor </span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="icon-set-social m-l-1">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                class="icon-set-social__link"
+              >
+                <svg class="icon icon--color-black d-2x2">
+                  <use href="./public/images/sprite.svg#icon-facebook" />
+                </svg>
+              </a>
+
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                class="icon-set-social__link"
+              >
+                <svg class="icon icon--color-black d-2x2">
+                  <use href="./public/images/sprite.svg#icon-twitter" />
+                </svg>
+              </a>
+
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                class="icon-set-social__link"
+              >
+                <svg class="icon icon--color-black d-2x2">
+                  <use href="./public/images/sprite.svg#icon-linkedin" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- --------------------Section team code-------------------- -->
+
+      <!-- --------------------Section contact code-------------------- -->
+      <section id="section-contact" class="section-contact s-p-h-big m-b-10">
+        <h2 class="heading-secondary m-b-5">
+          <span class="heading-secondary__sub">contact</span>
+          <span class="heading-secondary__main">with us</span>
+        </h2>
+
+        <div class="section-contact__container m-b-10">
+          <div id="map" class="section-contact__map-container">&nbsp;</div>
+
+          <div class="section-contact__schedule-container">
+            <h3
+              class="heading-tertiary heading-tertiary--color-white heading-tertiary--text-uppercase t-a-c"
+            >
+              working hours
+            </h3>
+
+            <ul class="section-contact__list">
+              <li class="section-contact__item">
+                <span class="section-contact__item--main">monday</span>
+                <span class="section-contact__item--sub">
+                  10:00 am to 8:00 pm
+                </span>
+              </li>
+
+              <li class="section-contact__item">
+                <span class="section-contact__item--main">tuesday</span>
+                <span class="section-contact__item--sub">
+                  10:00 am to 8:00 pm
+                </span>
+              </li>
+
+              <li class="section-contact__item">
+                <span class="section-contact__item--main">wednesday</span>
+                <span class="section-contact__item--sub">
+                  10:00 am to 8:00 pm
+                </span>
+              </li>
+
+              <li class="section-contact__item">
+                <span class="section-contact__item--main">thursday</span>
+                <span class="section-contact__item--sub">
+                  10:00 am to 8:00 pm
+                </span>
+              </li>
+
+              <li class="section-contact__item">
+                <span class="section-contact__item--main">friday</span>
+                <span class="section-contact__item--sub">
+                  10:00 am to 8:00 pm
+                </span>
+              </li>
+
+              <li class="section-contact__item">
+                <span class="section-contact__item--main">saturday</span>
+                <span class="section-contact__item--sub">
+                  10:00 am to 8:00 pm
+                </span>
+              </li>
+
+              <li class="section-contact__item">
+                <span class="section-contact__item--main">sunday</span>
+                <span class="section-contact__item--sub"> closed </span>
+              </li>
+            </ul>
+
+            <p class="section-contact__footer">
+              <span class="section-contact__footer--main">caution!!!</span>
+              <span class="section-contact__footer--sub">
+                the clinic open 24/7 for emergency
+              </span>
+            </p>
+          </div>
+        </div>
+
+        <div class="section-contact__container">
+          <div class="icon-info icon-info--call">
+            <div class="icon-info__container">
+              <h3
+                class="heading-tertiary heading-tertiary--color-secondary heading-tertiary--text-uppercase"
+              >
+                emergency
+              </h3>
+
+              <p class="paragraph paragraph--color-black">+61 9875674328</p>
+
+              <p class="paragraph paragraph--color-black">+61 7653427896</p>
+            </div>
+          </div>
+
+          <div class="icon-info icon-info--mail">
+            <div class="icon-info__container">
+              <h3
+                class="heading-tertiary heading-tertiary--color-secondary heading-tertiary--text-uppercase"
+              >
+                mail us
+              </h3>
+
+              <p class="paragraph paragraph--color-black">
+                support@dentalcare.com
+              </p>
+
+              <p class="paragraph paragraph--color-black">
+                official@dentalcare.com
+              </p>
+            </div>
+          </div>
+
+          <div class="icon-info icon-info--call">
+            <div class="icon-info__container">
+              <h3
+                class="heading-tertiary heading-tertiary--color-secondary heading-tertiary--text-uppercase"
+              >
+                appointment
+              </h3>
+
+              <p class="paragraph paragraph--color-black">+61 9745328765</p>
+
+              <p class="paragraph paragraph--color-black">+61 9756743298</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- --------------------Section contact code-------------------- -->
+    </main>
+
+    <!-- --------------------Footer code-------------------- -->
+    <footer class="footer s-p-h-small">
+      <a href="#" class="logo logo-hx8 m-b-5">
+        <img
+          src="./public/images/logo-white.svg"
+          alt="Brand logo"
+          class="logo__image"
+        />
+      </a>
+
+      <div class="footer__container">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#section-booking" class="footer__link">appointment</a>
+          </li>
+
+          <li class="footer__item">
+            <a href="#section-service" class="footer__link">service</a>
+          </li>
+
+          <li class="footer__item">
+            <a href="#section-team" class="footer__link">our team</a>
+          </li>
+
+          <li class="footer__item">
+            <a href="#section-contact" class="footer__link">contact us</a>
+          </li>
+
+          <li class="footer__item">
+            <a href="#" target="__blank" class="footer__link">
+              about us &nearrow;
+            </a>
+          </li>
+        </ul>
+
+        <p class="copyright-text">
+          <span class="copyright-text--main">&copy;made with</span>
+
+          <svg class="icon icon--color-primary d-3x3">
+            <use href="./public/images/sprite.svg#icon-smile" />
+          </svg>
+
+          <span class="copyright-text--main">by</span>
+
+          <a
+            href="https://github.com/im-sourov"
+            target="_blank"
+            class="copyright-text--link"
+          >
+            sourov &nearrow;
+          </a>
+        </p>
+      </div>
+    </footer>
+    <!-- --------------------Footer code-------------------- -->
+
+    <!-- --------------------Map box CDN-------------------- -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
+    <!-- --------------------Map box CDN-------------------- -->
+
+    <script src="./public/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+// ========================================>Importing helper files
+@import "./0-helper/color";
+@import "./0-helper/utility";
+// ========================================>Importing base files
+@import "./1-base/base";
+@import "./1-base/typography";
+@import "./1-base/animation";
+// ========================================>Importing layout files
+@import "./2-layout/navigation-bar";
+@import "./2-layout/section-hero";
+@import "./2-layout/section-booking";
+@import "./2-layout/section-service";
+@import "./2-layout/section-team";
+@import "./2-layout/section-contact";
+@import "./2-layout/footer";
+// ========================================>Importing component files
+@import "./3-component/logo";
+@import "./3-component/buttons";
+@import "./3-component/note";
+@import "./3-component/signature";
+@import "./3-component/form";
+@import "./3-component/service-card";
+@import "./3-component/profile-card";
+@import "./3-component/icons";
